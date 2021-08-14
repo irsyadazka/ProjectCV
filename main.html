@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Personal CV</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta name="author" content="Azka">
+        <link rel="stylesheet" href="stylemain.css">
+    </head>
+
+    <body>
+        <header>
+            <div id="logo">Hi,</div>
+            <div id="logo-2">It's Me, Azka!</div>
+            <div class="toogle" onclick="toggleMenu();"></div>
+            <ul class="menu">
+                <li><a href="" onclick="topFunction();" id="home" class="hovereffect">About Me</a></li>
+                <li><a href="#Biodata" onclick="toggleMenu();" class="hovereffect">Biodata</a></li>
+                <li><a href="#Education" onclick="toggleMenu();" class="hovereffect">Education</a></li>
+            </ul>
+        </header>
+
+        <section class="banner" id="about-me">
+            <div class="text-me">
+                <h2 class="headertext">About Me</h2>
+                <p class="article about">An dedicated and self-motivated student who loves to explore more, willing to learn anything, and always trying to get out of his comfort zone. Azka is in search of various experiences to develop self potential and other skills.</p>
+            </div>
+            <div class="image">
+                <img src="images/foto.jpg" class="homeimage">
+            </div>
+        </section>
+        
+        <section class="banner2" id="Biodata">
+            <div class="biodata-text">
+                <h2 class="headertext">Biodata </h2>
+                <p class="article"> Name          : Azka Syauqy Irsyad<br>    
+                Date of Birth : Jakarta, April 9th 2002<br>Address : Jalan Sabut I E4/25, Duren Sawit, DKI Jakarta
+                <br>Phone Number : (+62)81284677231</p>
+            </div>
+        </section>
+
+        <section id="Education">
+            
+        </section>
+
+        <script type="text/javascript">
+            window.addEventListener('scroll', function() {
+                var header = document.querySelector('header');
+                header.classList.toggle('sticky', window.scrollY > 0);
+            });
+
+            function toggleMenu() {
+                var menuToggle = document.querySelector('.toggle');
+                var menu = document.querySelector('.menu');
+                menuToggle.classList.toggle('active');
+                menu.classList.toggle('.active');
+            }
+        </script>
+    </body>
+</html>
